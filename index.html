@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css">
+    <title>EO Foundation</title>
+  </head>
+  <body>
+    <h1 id="title">EO Foundation</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the Foundation
+    </p>
+
+    <form id="survey-form">
+      <label id="name-label"
+        >Name
+        <input type="text" id="name" placeholder="Enter your name" required />
+      </label>
+
+      <label id="email-label" required
+        >Email
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your Email"
+          required
+        />
+      </label>
+
+      <label id="number-label"
+        >Age
+        <input type="number" id="number" placeholder="Age" min="13" max="120" />
+      </label>
+
+      <span required
+        >Are you a partner?
+        <label><input type="radio" name="partner" value="yes" />Yes</label>
+        <label><input type="radio" name="partner" value="no" />No</label>
+      </span>
+
+      <span
+        >If yes, what level of partnership are you?
+        <select id="dropdown">
+          <option selected hidden disabled></option>
+          <option>Bronze</option>
+          <option>Silver</option>
+          <option>Gold</option>
+          <option>Diamond</option>
+        </select>
+      </span>
+
+      <span required
+        >How did you know about <strong>Touch a million lives 1.0?</strong>
+        <label
+          ><input type="radio" name="know" value="friend" /> Through a
+          friend</label
+        >
+        <label
+          ><input type="radio" name="know" value="social" /> On social
+          media</label
+        >
+        <label><input type="radio" name="know" value="other" /> Others</label>
+      </span>
+
+      <span required
+        >Will you partake in the program?
+        <label><input type="radio" name="attend" value="Yes" /> Yes</label>
+        <label><input type="radio" name="attend" value="No" /> No</label>
+        <label><input type="radio" name="attend" value="Maybe" /> Maybe</label>
+      </span>
+
+      <span
+        >If you would partake, in which unit would you like to funtion?
+        <select>
+          <option selected hidden disabled></option>
+          <option>Logistics</option>
+          <option>Finance</option>
+          <option>Health</option>
+          <option>Education</option>
+          <option>Relationship</option>
+          <option>Protocol</option>
+        </select>
+      </span>
+
+      <span
+        >Which department would you like to see improved? (Check all that apply)
+        <label><input type="checkbox" value="finance" /> Finance</label>
+        <label><input type="checkbox" value="health" /> Health</label>
+        <label><input type="checkbox" value="education" /> Education</label>
+        <label
+          ><input type="checkbox" value="relationship" /> Relationship</label
+        >
+        <label
+          ><input type="checkbox" value="additional" /> Additional
+          Department</label
+        >
+      </span>
+
+      <span
+        >If you selected "Additional Department", kindly specify
+        <input type="text" id="additional" />
+      </span>
+
+      <span>Any comments or suggestions?</span>
+      <textarea id="textarea" rows="3" cols="10"></textarea>
+
+      <button id="submit">Submit</button>
+    </form>
+  </body>
+</html>

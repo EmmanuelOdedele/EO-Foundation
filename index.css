@@ -1,0 +1,27 @@
+h1,
+p {
+  margin: 0 auto;
+  text-align: center;
+}
+
+form,
+button,
+span,
+#name-label,
+#email-label,
+#number-label {
+  margin: 20px 0 0 0;
+}
+
+label,
+span,
+select,
+button,
+#name,
+#email,
+#number,
+#dropdown,
+#additional,
+#textarea {
+  display: block;
+}
